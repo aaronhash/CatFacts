@@ -1,38 +1,61 @@
 .App {
-  text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: #B24592;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #F15F79, #B24592);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #F15F79, #B24592);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	max-width: 45rem;
+	margin: 2rem;
+	padding: 2rem;
+	border-radius: 3rem;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	background-color: #fefefe;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+	font-size: 4rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+img {
+	object-fit: cover;
+	max-width: 90%;
+	max-height: 40rem;
+	border-radius: 1rem;
+	margin: 1rem 0;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.button {
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+	font-size: 1.8rem;
+	cursor: pointer;
+	color: #fefefe;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	background: #B24592;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #F15F79, #B24592);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #F15F79, #B24592);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+	font-size: 1.6rem;
+	padding-bottom: 1rem;
+	max-width: 90%;
+	text-align: center;
 }
